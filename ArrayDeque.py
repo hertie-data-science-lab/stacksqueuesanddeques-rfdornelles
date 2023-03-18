@@ -12,6 +12,7 @@ class ArrayDequeMaxlen():
 
 # parameter max len
     def __init__(self, max_len = 5):
+        print(f"Constructing a deque of size {max_len}")
         self._data = [None] * max_len 
         self._size = 0
         self._cap = max_len
@@ -63,7 +64,7 @@ class ArrayDequeMaxlen():
         new_data = [None] * size         
         new_data[size - 1] = element
         
-        for i in reversed(range(D._cap-1)): 
+        for i in reversed(range(self._cap-1)): 
             new_data[i] = self._data[i+1]
             
         self._data = new_data
@@ -83,7 +84,7 @@ class ArrayDequeMaxlen():
 ## tests
 
 print("Testing...")
-D = ArrayDequeMaxlen()
+D = ArrayDequeMaxlen(20)
 
 print(D._data)
 print(D._cap)
