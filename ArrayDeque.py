@@ -69,14 +69,19 @@ class ArrayDequeMaxlen():
             
         self._data = new_data
         
-# D.delete_first(): Remove and return the fist element from deque D
-    def delete_first(self):
-        pass
-    
 # D.first(): Return the first element of deque D
     def first(self):
         return self._data[0]
+        
+# D.delete_first(): Remove and return the fist element from deque D
+    def delete_first(self):
+        self.__update_size__()
+        
+        first_element = self.first()
+        self.add_last(None)
+        return first_element
     
+
 # D.last(): Return the last element of deque D
     def last(self):
         return self._data[self._cap - 1]
@@ -109,3 +114,6 @@ print(D._data)
 print("size:", D.len())
 print("first:", D.first())
 print("last:", D.last())
+
+print("first:", D.delete_first())
+print(D._data)
