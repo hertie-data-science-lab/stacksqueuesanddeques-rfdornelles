@@ -6,8 +6,6 @@ Created on Sun Mar  5 18:34:20 2023
 """
 
 from ArrayDeque import ArrayDequeMaxlen
-
-     
         
 AQM = ArrayDequeMaxlen(20)
 
@@ -24,14 +22,14 @@ for i in range(100):
     
 print ('\nAdding first')
 for i in range(20, 10, -1):
-    AQM.appendleft(i)
+    AQM.add_first(i) # adapting the name
     print (i, AQM._data)
     
     
-print(AQM._front)
+print(AQM.first())
     
 
     
-print('\nPerforming the removals')
-while not AQM.is_empty():
-    print ('Remove first', AQM[0], AQM.popleft(), 'Remove last', AQM[-1],  AQM.pop())
+# print('\nPerforming the removals')
+# while not AQM.is_empty():
+#     print ('Remove first', AQM[0], AQM.popleft(), 'Remove last', AQM[-1],  AQM.pop())
