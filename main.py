@@ -14,10 +14,10 @@ AQM = ArrayDequeMaxlen(20)
 
 print('Adding last')
 for i in range(100):
-    AQM.append(i)
+    AQM.add_last(i) # adapting the name
     print (i, AQM._data)
     
-print('\nDelete 80', AQM.remove(80), AQM._data, AQM._front)
+#print('\nDelete 80', AQM.remove(80), AQM._data, AQM._front)
     
 
 
