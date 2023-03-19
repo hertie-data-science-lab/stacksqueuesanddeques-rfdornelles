@@ -1,3 +1,12 @@
+# Notes
+1. The methods in main.py that not matched those present in the README were not included, following the Prof's instructions.
+2. Some of the methods were renamed to match the methods described in README.
+3. Group members:
+    a. Augusto Fonseca - 225984@students.hertie-school.org
+    b. Rodrigo Dornelles - 228446@students.hertie-school.org
+    c. Danial Riaz - 201678@students.hertie-school.org
+    d. Fernando Corral - 222836@students.hertie-school.org
+
 # DequeADT
 
 Implement a queue-like data structure that supports insertion and deletion
